@@ -1,0 +1,93 @@
+body {
+    background-color: #ddd;
+}
+
+.continer {
+    background-color: white;
+    padding: 10px;
+    border-radius: 10px;
+}
+
+.continer h2 {
+    text-align: center;
+    position: relative;
+    padding-bottom: 10px;
+}
+
+.continer h2::before {
+    content: "";
+    position: absolute;
+    width: 200px;
+    height: 3px;
+    background-color: black;
+    left: 50%;
+    transform: translateX(-50%);
+    bottom: -5px;
+}
+
+.continer h2::after {
+    content: "";
+    position: absolute;
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    background-color: white;
+    border: solid 2px black;
+    left: 50%;
+    transform: translateX(-50%);
+    bottom: -9px;
+}
+
+.continer .info input {
+    width: 90%;
+    margin: 10px 10px;
+    background-color: #ddd;
+    padding: 5px;
+    border-radius: 5px;
+    border: none;
+}
+
+.continer .info span {
+    background-color: black;
+    display: inline-block;
+    width: 90%;
+    margin: 10px 10px;
+    padding: 10px;
+    color: white;
+    border-radius: 3px;
+    text-align: center;
+    cursor: pointer;
+}
+
+table {
+    width: 100%;
+    text-align: center;
+    line-height: 3;
+    padding: 10px;
+}
+
+table thead {
+    background-color: black;
+    color: white;
+    text-align: center;
+    padding: 10px;
+    border-radius: 10px;
+}
+
+table thead tr td {
+    padding: 5px;
+    font-weight: bold;
+}
+
+table tbody {
+    background-color: black;
+    padding: 10px;
+    color: white;
+    font-weight: bold;
+    text-align: center;
+}
+
+table tbody tr td {
+    margin: 10px 10px;
+    padding: 5px;
+}
